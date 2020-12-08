@@ -4,7 +4,15 @@
 // 
 // Create Date: 11/24/20
 // Module Name: status_state
-// Description: 
+// Description: Status_state is the wrapper for both health and hygiene. It outputs
+//              death_count, sick/poop/sleep, and happy/hunger statuses into the
+//              game_top_level.
+//              Status_state is essential in determining which timers to give health
+//              for the decay of happy/hunger (baby have different timers than other
+//              stages). It also gives both lower modules "progress" which is just
+//              when health can happen (aka not dead || egg).
+//              After recieving the penalties from the lower modules, it updates
+//              death_count.
 //////////////////////////////////////////////////////////////////////////////////
 
 module status_state(
