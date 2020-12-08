@@ -1,0 +1,824 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Dec  6 16:43:00 2020
+# Process ID: 22136
+# Current directory: C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1
+# Command line: vivado.exe -log tippity_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tippity_top_level.tcl
+# Log file: C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/tippity_top_level.vds
+# Journal file: C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tippity_top_level.tcl -notrace
+Command: synth_design -top tippity_top_level -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31880 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 819.094 ; gain = 233.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tippity_top_level' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/tippity_top_level.sv:10]
+	Parameter DEBOUNCE_COUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/.Xil/Vivado-22136-DESKTOP-P4AR508/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/.Xil/Vivado-22136-DESKTOP-P4AR508/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'RNG' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/RNG.sv:11]
+	Parameter MIC_CLOCK_COUNTER bound to: 65 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RNG' (2#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/RNG.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
+	Parameter DEBOUNCE_COUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (3#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'game_top_level' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/game_top_level.sv:12]
+	Parameter DEBOUNCE_COUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'edge_detect' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detect' (4#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'latch' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/latch.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'latch' (5#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/latch.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'sd_buffer' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv:3]
+	Parameter DEBOUNCE_COUNT_SD bound to: 10000000 - type: integer 
+	Parameter FIRST_BOOT bound to: 0 - type: integer 
+	Parameter IDLE bound to: 1 - type: integer 
+	Parameter START_READ bound to: 2 - type: integer 
+	Parameter READ_B0 bound to: 3 - type: integer 
+	Parameter READ_B1 bound to: 4 - type: integer 
+	Parameter READ_B2 bound to: 5 - type: integer 
+	Parameter READ_B3 bound to: 6 - type: integer 
+	Parameter READ_B4 bound to: 7 - type: integer 
+	Parameter READ_WAIT bound to: 8 - type: integer 
+	Parameter START_WRITE bound to: 9 - type: integer 
+	Parameter WRITE_B0 bound to: 10 - type: integer 
+	Parameter WRITE_B1 bound to: 11 - type: integer 
+	Parameter WRITE_B2 bound to: 12 - type: integer 
+	Parameter WRITE_B3 bound to: 13 - type: integer 
+	Parameter WRITE_B4 bound to: 14 - type: integer 
+	Parameter WRITE_WAIT bound to: 15 - type: integer 
+	Parameter DEBOUNCE_COUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debounce__parameterized0' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
+	Parameter DEBOUNCE_COUNT bound to: 10000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce__parameterized0' (5#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'sd_controller' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv:6]
+	Parameter RST bound to: 0 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000001 
+	Parameter CMD0 bound to: 2 - type: integer 
+	Parameter CMD55 bound to: 3 - type: integer 
+	Parameter CMD41 bound to: 4 - type: integer 
+	Parameter POLL_CMD bound to: 5 - type: integer 
+	Parameter IDLE bound to: 6 - type: integer 
+	Parameter READ_BLOCK bound to: 7 - type: integer 
+	Parameter READ_BLOCK_WAIT bound to: 8 - type: integer 
+	Parameter READ_BLOCK_DATA bound to: 9 - type: integer 
+	Parameter READ_BLOCK_CRC bound to: 10 - type: integer 
+	Parameter SEND_CMD bound to: 11 - type: integer 
+	Parameter RECEIVE_BYTE_WAIT bound to: 12 - type: integer 
+	Parameter RECEIVE_BYTE bound to: 13 - type: integer 
+	Parameter WRITE_BLOCK_CMD bound to: 14 - type: integer 
+	Parameter WRITE_BLOCK_INIT bound to: 15 - type: integer 
+	Parameter WRITE_BLOCK_DATA bound to: 16 - type: integer 
+	Parameter WRITE_BLOCK_BYTE bound to: 17 - type: integer 
+	Parameter WRITE_BLOCK_WAIT bound to: 18 - type: integer 
+	Parameter WRITE_DATA_SIZE bound to: 515 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv:79]
+INFO: [Synth 8-6155] done synthesizing module 'sd_controller' (6#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv:6]
+INFO: [Synth 8-226] default block is never used [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv:154]
+INFO: [Synth 8-6155] done synthesizing module 'sd_buffer' (7#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'time_control' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv:11]
+	Parameter ONE_SEC bound to: 65000000 - type: integer 
+	Parameter AGE_STEP bound to: 60 - type: integer 
+	Parameter COUNT_INCREMENT_1 bound to: 0 - type: integer 
+	Parameter COUNT_INCREMENT_2 bound to: 1 - type: integer 
+	Parameter COUNT_INCREMENT_3 bound to: 3 - type: integer 
+	Parameter COUNT_INCREMENT_4 bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'time_control' (8#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'life_cycle' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/life_cycle.sv:19]
+	Parameter EGG bound to: 3'b001 
+	Parameter BABY bound to: 3'b010 
+	Parameter CHILD bound to: 3'b011 
+	Parameter TEEN bound to: 3'b100 
+	Parameter ADULT bound to: 3'b101 
+	Parameter DEATH bound to: 3'b110 
+	Parameter BABY_AGE bound to: 1 - type: integer 
+	Parameter CHILD_AGE bound to: 3 - type: integer 
+	Parameter TEEN_AGE bound to: 6 - type: integer 
+	Parameter ADULT_AGE bound to: 10 - type: integer 
+	Parameter DEATH_AGE bound to: 20 - type: integer 
+	Parameter SPRITE_V1 bound to: 0 - type: integer 
+	Parameter SPRITE_V2 bound to: 1 - type: integer 
+	Parameter SPRITE_V3 bound to: 2 - type: integer 
+	Parameter SPRITE_V4 bound to: 3 - type: integer 
+	Parameter SPRITE_V5 bound to: 4 - type: integer 
+	Parameter SPRITE_V6 bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'life_cycle' (9#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/life_cycle.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'icon_activity' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:14]
+	Parameter IDLE bound to: 3'b000 
+	Parameter FOOD bound to: 3'b001 
+	Parameter LIGHTS bound to: 3'b010 
+	Parameter PLAY bound to: 3'b011 
+	Parameter MEDICINE bound to: 3'b100 
+	Parameter BATH bound to: 3'b101 
+	Parameter HEALTH bound to: 3'b110 
+	Parameter DISCIPLINE bound to: 3'b111 
+	Parameter TAMA_MENU bound to: 2'b00 
+	Parameter HAPPY_MENU bound to: 2'b01 
+	Parameter HUNGER_MENU bound to: 2'b10 
+	Parameter EGG bound to: 3'b001 
+INFO: [Synth 8-226] default block is never used [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:81]
+WARNING: [Synth 8-6014] Unused sequential element icon_edge_reg was removed.  [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'icon_activity' (10#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'status_state' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/status_state.sv:10]
+	Parameter EGG bound to: 3'b001 
+	Parameter BABY bound to: 3'b010 
+	Parameter FULL_HEALTH bound to: 16 - type: integer 
+	Parameter PLAY_TIMER bound to: 2015000000 - type: integer 
+	Parameter FOOD_TIMER bound to: 1495000000 - type: integer 
+	Parameter BABY_DTIMER bound to: 650000000 - type: integer 
+	Parameter HAPPY_TIMER bound to: -849967296 - type: integer 
+	Parameter HUNGER_TIMER bound to: -69967296 - type: integer 
+	Parameter BABY_TIMER bound to: 1365000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'change_detect' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'change_detect' (11#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'change_detect__parameterized0' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'change_detect__parameterized0' (11#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'health' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/health.sv:17]
+	Parameter HAPPY_FULL bound to: 4 - type: integer 
+	Parameter HUNGER_FULL bound to: 4 - type: integer 
+	Parameter FOOD bound to: 3'b001 
+	Parameter LIGHTS bound to: 3'b010 
+	Parameter PLAY bound to: 3'b011 
+	Parameter DISCIPLINE bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'health' (12#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/health.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'hygiene' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv:15]
+	Parameter MED_TIMER bound to: 780000000 - type: integer 
+	Parameter BATH_TIMER bound to: 1430000000 - type: integer 
+	Parameter MED_BUFFER bound to: 1300000000 - type: integer 
+	Parameter BATH_BUFFER bound to: 1950000000 - type: integer 
+	Parameter NOTHING bound to: 0 - type: integer 
+	Parameter SICK bound to: 1 - type: integer 
+	Parameter POOP bound to: 2 - type: integer 
+	Parameter MEDICINE bound to: 3'b100 
+	Parameter BATH bound to: 3'b101 
+INFO: [Synth 8-226] default block is never used [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'hygiene' (13#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'status_state' (14#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/status_state.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'death_count_led' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/death_count_led.sv:11]
+	Parameter MAX_COUNT bound to: 16 - type: integer 
+	Parameter PULSE_COUNT bound to: 32500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'death_count_led' (15#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/death_count_led.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_decimal' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/bin_to_decimal.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_decimal' (16#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/bin_to_decimal.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'display_8hex' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/seven_seg.sv:10]
+	Parameter bits bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'display_8hex' (17#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/seven_seg.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'game_top_level' (18#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/game_top_level.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'tippity_top_level' (19#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/tippity_top_level.sv:10]
+WARNING: [Synth 8-3331] design hygiene has unconnected port random[5]
+WARNING: [Synth 8-3331] design hygiene has unconnected port random[4]
+WARNING: [Synth 8-3331] design hygiene has unconnected port random[3]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[12]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[11]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[10]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[9]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[8]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[7]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 893.211 ; gain = 307.953
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 893.211 ; gain = 307.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 893.211 ; gain = 307.953
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 893.211 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk100mhz_to_65mhz'
+Finished Parsing XDC File [c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk100mhz_to_65mhz'
+Parsing XDC File [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]
+Finished Parsing XDC File [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tippity_top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tippity_top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1013.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1013.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1013.336 ; gain = 428.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1013.336 ; gain = 428.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for clk100mhz_to_65mhz. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1013.336 ; gain = 428.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_buffer'
+INFO: [Synth 8-802] inferred FSM for state register 'menu_reg' in module 'icon_activity'
+INFO: [Synth 8-802] inferred FSM for state register 'icon_select_reg' in module 'icon_activity'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              FIRST_BOOT |                             0000 |                             0000
+                    IDLE |                             0001 |                             0001
+             START_WRITE |                             0010 |                             1001
+                WRITE_B0 |                             0011 |                             1010
+                WRITE_B1 |                             0100 |                             1011
+                WRITE_B2 |                             0101 |                             1100
+                WRITE_B3 |                             0110 |                             1101
+                WRITE_B4 |                             0111 |                             1110
+              WRITE_WAIT |                             1000 |                             1111
+              START_READ |                             1001 |                             0010
+                 READ_B0 |                             1010 |                             0011
+                 READ_B1 |                             1011 |                             0100
+                 READ_B2 |                             1100 |                             0101
+                 READ_B3 |                             1101 |                             0110
+                 READ_B4 |                             1110 |                             0111
+               READ_WAIT |                             1111 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sd_buffer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               TAMA_MENU |                              001 |                               00
+              HAPPY_MENU |                              010 |                               01
+             HUNGER_MENU |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'menu_reg' using encoding 'one-hot' in module 'icon_activity'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    FOOD |                              001 |                              001
+                  LIGHTS |                              010 |                              010
+                    PLAY |                              011 |                              011
+                MEDICINE |                              100 |                              100
+                    BATH |                              101 |                              101
+                  HEALTH |                              110 |                              110
+              DISCIPLINE |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'icon_select_reg' using encoding 'sequential' in module 'icon_activity'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1013.336 ; gain = 428.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 28    
+	   5 Input      3 Bit       Adders := 1     
+	   4 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 9     
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 60    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	  20 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	  20 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  16 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 4     
+	  20 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 12    
+	   9 Input      3 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  20 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 90    
+	  20 Input      1 Bit        Muxes := 12    
+	   8 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RNG 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module edge_detect 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module latch 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module debounce__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module sd_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               56 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  20 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	  20 Input      2 Bit        Muxes := 1     
+	  20 Input      1 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module sd_buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                3 Bit    Registers := 8     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 11    
+Module time_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module life_cycle 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	  13 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module icon_activity 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 3     
+Module change_detect 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module change_detect__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+Module health 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input      3 Bit       Adders := 1     
+	   4 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 13    
+Module hygiene 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+Module status_state 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module death_count_led 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module bin_to_decimal 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 7     
++---Muxes : 
+	  11 Input      4 Bit        Muxes := 1     
+Module display_8hex 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module game_top_level 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design tippity_top_level has port m_lrsel driven by constant 0
+WARNING: [Synth 8-3331] design status_state has unconnected port random[5]
+WARNING: [Synth 8-3331] design status_state has unconnected port random[4]
+WARNING: [Synth 8-3331] design status_state has unconnected port random[3]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[12]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[11]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[10]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[9]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[8]
+WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[7]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (play_tama_time/\sd_turnaround/sd/cmd_out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[0]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[1]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[2]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[3]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[4]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[5]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[6]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[7]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[8]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[11]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (play_tama_time/\sd_turnaround/addr_latch_reg[12] )
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[13]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[14]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[15]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[16]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[17]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[18]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[19]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[20]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[21]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[22]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[23]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[24]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[25]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[26]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[27]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[28]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[29]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/sd_turnaround/addr_latch_reg[30]' (FDE) to 'play_tama_time/sd_turnaround/addr_latch_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (play_tama_time/\sd_turnaround/addr_latch_reg[31] )
+INFO: [Synth 8-3886] merging instance 'play_tama_time/data_reg[6]' (FD) to 'play_tama_time/data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/data_reg[22]' (FD) to 'play_tama_time/data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/data_reg[7]' (FD) to 'play_tama_time/data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/data_reg[15]' (FD) to 'play_tama_time/data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'play_tama_time/data_reg[31]' (FD) to 'play_tama_time/data_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (play_tama_time/\data_reg[23] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1013.336 ; gain = 428.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1013.336 ; gain = 428.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1061.992 ; gain = 476.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1063.039 ; gain = 477.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1064.836 ; gain = 479.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1064.836 ; gain = 479.578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1064.836 ; gain = 479.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|tippity_top_level | randomness/mic_shift_reg[255] | 39     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|tippity_top_level | randomness/mic_shift_reg[216] | 36     | 6     | NO           | NO                 | YES               | 0      | 12      | 
++------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |   155|
+|3     |LUT1      |    42|
+|4     |LUT2      |   103|
+|5     |LUT3      |   106|
+|6     |LUT4      |   103|
+|7     |LUT5      |   233|
+|8     |LUT6      |   265|
+|9     |MUXF7     |     8|
+|10    |SRLC32E   |    14|
+|11    |FDRE      |   814|
+|12    |FDSE      |    60|
+|13    |IBUF      |    18|
+|14    |OBUF      |    45|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------+------------------------------+------+
+|      |Instance               |Module                        |Cells |
++------+-----------------------+------------------------------+------+
+|1     |top                    |                              |  1968|
+|2     |  dbA                  |debounce                      |    47|
+|3     |  dbB                  |debounce_0                    |    46|
+|4     |  dbC                  |debounce_1                    |    46|
+|5     |  play_tama_time       |game_top_level                |  1719|
+|6     |    RNG_latch          |latch                         |    15|
+|7     |      trigger_edge     |edge_detect_12                |     2|
+|8     |    dbS                |debounce_2                    |    42|
+|9     |    dbjump             |debounce_3                    |    42|
+|10    |    death_lights       |death_count_led               |    79|
+|11    |    display            |display_8hex                  |   102|
+|12    |    icons              |icon_activity                 |    48|
+|13    |      ACdetect         |edge_detect_8                 |     1|
+|14    |      Adetect          |edge_detect_9                 |     3|
+|15    |      Bdetect          |edge_detect_10                |     5|
+|16    |      Cdetect          |edge_detect_11                |     8|
+|17    |    jump_button        |edge_detect                   |     2|
+|18    |    sd_turnaround      |sd_buffer                     |   615|
+|19    |      RDbyte_ready     |edge_detect_4                 |     8|
+|20    |      WRbyte_ready     |edge_detect_5                 |     2|
+|21    |      dbS              |debounce_6                    |    43|
+|22    |      db_sd            |debounce__parameterized0      |    45|
+|23    |      saveload_button  |edge_detect_7                 |     4|
+|24    |      sd               |sd_controller                 |   369|
+|25    |    statuses           |status_state                  |   532|
+|26    |      age_trigger      |change_detect                 |     8|
+|27    |      clean_up_time    |hygiene                       |   234|
+|28    |      health_functions |health                        |   259|
+|29    |      second           |change_detect__parameterized0 |     7|
+|30    |    tama_life          |life_cycle                    |   126|
+|31    |    timely             |time_control                  |    89|
+|32    |  randomness           |RNG                           |    45|
++------+-----------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:01 . Memory (MB): peak = 1064.836 ; gain = 359.453
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1076.887 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 163 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1076.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1076.887 ; gain = 778.324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1076.887 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/tippity_top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tippity_top_level_utilization_synth.rpt -pb tippity_top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  6 16:44:21 2020...

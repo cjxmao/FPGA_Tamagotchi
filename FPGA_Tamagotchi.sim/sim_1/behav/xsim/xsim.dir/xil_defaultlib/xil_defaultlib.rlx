@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sim_1/new/icon_activity_tb.sv,1606546527,systemVerilog,,,,icon_activity_tb,,,../../../../FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv,1605480680,systemVerilog,,C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv,,edge_detect,,,../../../../FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv,1606546603,systemVerilog,,C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sim_1/new/icon_activity_tb.sv,,icon_activity,,,../../../../FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0,,,,,

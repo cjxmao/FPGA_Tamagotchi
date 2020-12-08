@@ -1,0 +1,16 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                              play_tama_time/statuses/death_count_reg[2]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                              play_tama_time/tama_life/tama_stage_reg[2]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                                              play_tama_time/data_reg[9]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                                   play_tama_time/timely/tama_age_reg[2]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                                   play_tama_time/timely/tama_age_reg[1]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                                             play_tama_time/data_reg[10]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                                             play_tama_time/data_reg[13]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                                play_tama_time/timely/sec_counter_reg[0]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                             play_tama_time/tama_life/tama_sprite_reg[1]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                                             play_tama_time/data_reg[11]/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                          play_tama_time/statuses/clean_up_time/poop_reg/D|
+|       clk_out2_clk_wiz_0 |       clk_out1_clk_wiz_0 |                                                                             play_tama_time/data_reg[12]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

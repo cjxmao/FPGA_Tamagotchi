@@ -1,0 +1,136 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Dec  6 16:45:29 2020
+| Host         : DESKTOP-P4AR508 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file tippity_top_level_control_sets_placed.rpt
+| Design       : tippity_top_level
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    58 |
+|    Minimum number of control sets                        |    58 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   142 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    58 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |    12 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     9 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             108 |           53 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              68 |           30 |
+| Yes          | No                    | No                     |             165 |           63 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             533 |          137 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|            Clock Signal           |                                Enable Signal                               |                         Set/Reset Signal                         | Slice Load Count | Bel Load Count |
++-----------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|  clk100mhz_to_65mhz/inst/clk_out1 | dbB/new_input_i_1__3_n_0                                                   |                                                                  |                1 |              1 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | dbA/new_input_i_1__2_n_0                                                   |                                                                  |                1 |              1 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/cs_i_1_n_0                                 |                                                                  |                1 |              1 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/dbjump/new_input_i_1_n_0                                    |                                                                  |                1 |              1 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | dbC/new_input_i_1__4_n_0                                                   |                                                                  |                1 |              1 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/dbS/E[0]                                      |                                                                  |                1 |              2 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/cmd_out[45]_i_1_n_0                        | play_tama_time/sd_turnaround/sd/cmd_out[20]_i_1_n_0              |                2 |              4 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/byte_counter[9]_i_1_n_0                    |                                                                  |                1 |              4 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/E[0]                                       | btnu_IBUF                                                        |                1 |              4 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/RDbyte_ready/FSM_sequential_state_reg[0]_0    |                                                                  |                3 |              4 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/bit_counter[7]_i_1_n_0                     | play_tama_time/sd_turnaround/sd/bit_counter[9]_i_1_n_0           |                2 |              4 |
+|  clk100mhz_to_65mhz/inst/clk_out1 |                                                                            | play_tama_time/display/strobe_out[3]_i_1_n_0                     |                1 |              4 |
+|  clk100mhz_to_65mhz/inst/clk_out1 |                                                                            | play_tama_time/display/p_0_in[2]                                 |                2 |              4 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/state[4]_i_2_n_0                           | play_tama_time/sd_turnaround/db_sd/SR[0]                         |                3 |              5 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/statuses/death_count[4]_i_1_n_0                             |                                                                  |                2 |              5 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/timely/tama_age[4]_i_1_n_0                                  |                                                                  |                2 |              5 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/return_state[4]_i_1_n_0                    |                                                                  |                2 |              5 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/tama_life/dead_reg_1[0]                                     |                                                                  |                1 |              5 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/byte_counter[9]_i_1_n_0                    | play_tama_time/sd_turnaround/sd/byte_counter[7]_i_1_n_0          |                3 |              6 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/tama_life/E[0]                                              |                                                                  |                4 |              6 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/RDbyte_ready/FSM_sequential_state_reg[0][0]   |                                                                  |                3 |              6 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/RDbyte_ready/last_signal_reg_0[0]             |                                                                  |                2 |              6 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/bit_counter[7]_i_1_n_0                     |                                                                  |                3 |              6 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/tama_life/sec_counter                                       |                                                                  |                4 |              6 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/FSM_sequential_state_reg[3]_0[0]           |                                                                  |                3 |              8 |
+|  clk100mhz_to_65mhz/inst/clk_out1 |                                                                            | sw_IBUF[4]                                                       |                5 |              8 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/RDbyte_ready/FSM_sequential_state_reg[0]_1[0] |                                                                  |                3 |              8 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/RNG_latch/trigger_edge/E[0]                                 |                                                                  |                4 |              8 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/data_sig[7]_i_1_n_0                        |                                                                  |                3 |              8 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/dout[7]_i_1_n_0                            |                                                                  |                1 |              8 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/recv_data[7]_i_1_n_0                       |                                                                  |                1 |              8 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/RDbyte_ready/E[0]                             |                                                                  |                3 |              8 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/cmd_out[45]_i_1_n_0                        | play_tama_time/sd_turnaround/sd/cmd_out[55]_i_1_n_0              |                2 |              9 |
+|  clk100mhz_to_65mhz/inst/clk_out1 |                                                                            | play_tama_time/tama_life/tama_reset_reg_0                        |                7 |             10 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/cmd_out[45]_i_1_n_0                        |                                                                  |                3 |             12 |
+|  clk100mhz_to_65mhz/inst/clk_out2 |                                                                            |                                                                  |                9 |             13 |
+|  randomness/m_clk_OBUF            |                                                                            |                                                                  |                5 |             22 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/dbS/count                                     | play_tama_time/sd_turnaround/dbS/count[0]_i_1__5_n_0             |                6 |             24 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/db_sd/count                                   | play_tama_time/sd_turnaround/db_sd/count[0]_i_1__4_n_0           |                6 |             24 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/dbjump/count                                                | play_tama_time/dbjump/new_input_i_1_n_0                          |                6 |             24 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | dbA/count                                                                  | dbA/new_input_i_1__2_n_0                                         |                6 |             24 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/dbS/count                                                   | play_tama_time/dbS/count[0]_i_1__3_n_0                           |                6 |             24 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | dbC/count                                                                  | dbC/new_input_i_1__4_n_0                                         |                6 |             24 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | dbB/count                                                                  | dbB/new_input_i_1__3_n_0                                         |                6 |             24 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/tama_life/p_0_in                                            | play_tama_time/tama_life/sec_counter                             |                7 |             26 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/boot_counter[0]_i_1_n_0                    | play_tama_time/sd_turnaround/db_sd/SR[0]                         |                7 |             27 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/sd/cmd_out[45]_i_1_n_0                        | play_tama_time/sd_turnaround/sd/cmd_out[47]_i_1_n_0              |                4 |             30 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/tama_life/med_bcount                                        | play_tama_time/tama_life/dead_reg_3                              |                8 |             31 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/tama_life/sel                                               | play_tama_time/tama_life/tama_reset_reg_2                        |                8 |             31 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/tama_life/bath_bcount                                       | play_tama_time/statuses/clean_up_time/bath_bcount[0]_i_1_n_0     |                8 |             31 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/statuses/health_functions/play_counter[0]_i_2_n_0           | play_tama_time/statuses/health_functions/play_counter[0]_i_1_n_0 |                8 |             31 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/statuses/health_functions/food_counter[0]_i_2_n_0           | play_tama_time/statuses/health_functions/food_counter[0]_i_1_n_0 |                8 |             31 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/tama_life/tama_stage_reg[1]_1                               | play_tama_time/tama_life/tama_reset_reg_1                        |                8 |             31 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/statuses/health_functions/hunger_reg[2]_0                   | play_tama_time/tama_life/tama_reset_reg_3                        |                8 |             32 |
+|  clk100mhz_to_65mhz/inst/clk_out1 | play_tama_time/statuses/health_functions/sel                               | play_tama_time/tama_life/tama_reset_reg_4                        |                8 |             32 |
+|  clk100mhz_to_65mhz/inst/clk_out2 | play_tama_time/sd_turnaround/saveload_button/last_signal_reg_0             |                                                                  |                9 |             32 |
+|  clk100mhz_to_65mhz/inst/clk_out1 |                                                                            | btnu_IBUF                                                        |               15 |             42 |
+|  clk100mhz_to_65mhz/inst/clk_out1 |                                                                            |                                                                  |               39 |             87 |
++-----------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+
+
