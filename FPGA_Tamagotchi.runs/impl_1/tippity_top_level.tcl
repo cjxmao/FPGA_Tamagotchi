@@ -60,26 +60,24 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.xpr [current_project]
-  set_property ip_output_repo C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.cache/wt [current_project]
+  set_property parent.project_path C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.xpr [current_project]
+  set_property ip_output_repo C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/tippity_top_level.dcp
-  read_ip -quiet C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_xdc C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc
+  add_files -quiet C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/tippity_top_level.dcp
+  read_ip -quiet C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_xdc C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc
   link_design -top tippity_top_level -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

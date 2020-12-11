@@ -17,47 +17,44 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.cache/wt [current_project]
-set_property parent.project_path C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.xpr [current_project]
+set_property webtalk.parent_dir C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.cache/wt [current_project]
+set_property parent.project_path C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.cache/ip [current_project]
+set_property ip_output_repo c:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/RNG.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/bin_to_decimal.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/death_count_led.sv
-  {C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv}
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/game_top_level.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/health.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/latch.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/life_cycle.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/seven_seg.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/status_state.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv
-  C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/tippity_top_level.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/RNG.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/bin_to_decimal.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/death_count_led.sv
+  {C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv}
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/game_top_level.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/health.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/latch.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/life_cycle.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/seven_seg.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/status_state.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv
+  C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/tippity_top_level.sv
 }
-read_verilog -library xil_defaultlib C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv
-set_property file_type Verilog [get_files C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv]
-read_ip -quiet C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_verilog -library xil_defaultlib C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv
+set_property file_type Verilog [get_files C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv]
+read_ip -quiet C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -67,8 +64,8 @@ set_property used_in_implementation false [get_files -all c:/Users/Stary/Documen
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc
-set_property used_in_implementation false [get_files C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]
+read_xdc C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc
+set_property used_in_implementation false [get_files C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

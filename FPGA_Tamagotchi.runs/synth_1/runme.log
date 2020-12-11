@@ -15,27 +15,27 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 31880 
+INFO: Helper process launched with PID 13484 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 819.094 ; gain = 233.836
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 819.703 ; gain = 234.313
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'tippity_top_level' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/tippity_top_level.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'tippity_top_level' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/tippity_top_level.sv:10]
 	Parameter DEBOUNCE_COUNT bound to: 1000000 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/.Xil/Vivado-22136-DESKTOP-P4AR508/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/.Xil/Vivado-22136-DESKTOP-P4AR508/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'RNG' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/RNG.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/.Xil/Vivado-21168-DESKTOP-P4AR508/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/.Xil/Vivado-21168-DESKTOP-P4AR508/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'RNG' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/RNG.sv:11]
 	Parameter MIC_CLOCK_COUNTER bound to: 65 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'RNG' (2#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/RNG.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'RNG' (2#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/RNG.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
 	Parameter DEBOUNCE_COUNT bound to: 1000000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (3#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'game_top_level' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/game_top_level.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (3#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'game_top_level' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/game_top_level.sv:12]
 	Parameter DEBOUNCE_COUNT bound to: 1000000 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'edge_detect' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'edge_detect' (4#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'latch' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/latch.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'latch' (5#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/latch.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'sd_buffer' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'edge_detect' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detect' (4#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'latch' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/latch.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'latch' (5#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/latch.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'sd_buffer' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv:3]
 	Parameter DEBOUNCE_COUNT_SD bound to: 10000000 - type: integer 
 	Parameter FIRST_BOOT bound to: 0 - type: integer 
 	Parameter IDLE bound to: 1 - type: integer 
@@ -54,10 +54,10 @@ INFO: [Synth 8-6157] synthesizing module 'sd_buffer' [C:/Users/Stary/Documents/M
 	Parameter WRITE_B4 bound to: 14 - type: integer 
 	Parameter WRITE_WAIT bound to: 15 - type: integer 
 	Parameter DEBOUNCE_COUNT bound to: 1000000 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'debounce__parameterized0' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'debounce__parameterized0' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
 	Parameter DEBOUNCE_COUNT bound to: 10000000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'debounce__parameterized0' (5#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'sd_controller' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'debounce__parameterized0' (5#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'sd_controller' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv:6]
 	Parameter RST bound to: 0 - type: integer 
 	Parameter INIT bound to: 32'sb00000000000000000000000000000001 
 	Parameter CMD0 bound to: 2 - type: integer 
@@ -78,20 +78,20 @@ INFO: [Synth 8-6157] synthesizing module 'sd_controller' [C:/Users/Stary/Documen
 	Parameter WRITE_BLOCK_BYTE bound to: 17 - type: integer 
 	Parameter WRITE_BLOCK_WAIT bound to: 18 - type: integer 
 	Parameter WRITE_DATA_SIZE bound to: 515 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv:79]
-INFO: [Synth 8-6155] done synthesizing module 'sd_controller' (6#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv:6]
-INFO: [Synth 8-226] default block is never used [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv:154]
-INFO: [Synth 8-6155] done synthesizing module 'sd_buffer' (7#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv:3]
-INFO: [Synth 8-6157] synthesizing module 'time_control' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv:11]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv:79]
+INFO: [Synth 8-6155] done synthesizing module 'sd_controller' (6#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_controller.sv:6]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv:154]
+INFO: [Synth 8-6155] done synthesizing module 'sd_buffer' (7#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/sd_buffer.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'time_control' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv:11]
 	Parameter ONE_SEC bound to: 65000000 - type: integer 
 	Parameter AGE_STEP bound to: 60 - type: integer 
 	Parameter COUNT_INCREMENT_1 bound to: 0 - type: integer 
 	Parameter COUNT_INCREMENT_2 bound to: 1 - type: integer 
 	Parameter COUNT_INCREMENT_3 bound to: 3 - type: integer 
 	Parameter COUNT_INCREMENT_4 bound to: 10 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv:35]
-INFO: [Synth 8-6155] done synthesizing module 'time_control' (8#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'life_cycle' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/life_cycle.sv:19]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'time_control' (8#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/time_control.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'life_cycle' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/life_cycle.sv:19]
 	Parameter EGG bound to: 3'b001 
 	Parameter BABY bound to: 3'b010 
 	Parameter CHILD bound to: 3'b011 
@@ -109,8 +109,8 @@ INFO: [Synth 8-6157] synthesizing module 'life_cycle' [C:/Users/Stary/Documents/
 	Parameter SPRITE_V4 bound to: 3 - type: integer 
 	Parameter SPRITE_V5 bound to: 4 - type: integer 
 	Parameter SPRITE_V6 bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'life_cycle' (9#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/life_cycle.sv:19]
-INFO: [Synth 8-6157] synthesizing module 'icon_activity' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'life_cycle' (9#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/life_cycle.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'icon_activity' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:14]
 	Parameter IDLE bound to: 3'b000 
 	Parameter FOOD bound to: 3'b001 
 	Parameter LIGHTS bound to: 3'b010 
@@ -123,10 +123,10 @@ INFO: [Synth 8-6157] synthesizing module 'icon_activity' [C:/Users/Stary/Documen
 	Parameter HAPPY_MENU bound to: 2'b01 
 	Parameter HUNGER_MENU bound to: 2'b10 
 	Parameter EGG bound to: 3'b001 
-INFO: [Synth 8-226] default block is never used [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:81]
-WARNING: [Synth 8-6014] Unused sequential element icon_edge_reg was removed.  [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:60]
-INFO: [Synth 8-6155] done synthesizing module 'icon_activity' (10#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:14]
-INFO: [Synth 8-6157] synthesizing module 'status_state' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/status_state.sv:10]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:81]
+WARNING: [Synth 8-6014] Unused sequential element icon_edge_reg was removed.  [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'icon_activity' (10#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/icon_activity.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'status_state' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/status_state.sv:18]
 	Parameter EGG bound to: 3'b001 
 	Parameter BABY bound to: 3'b010 
 	Parameter FULL_HEALTH bound to: 16 - type: integer 
@@ -136,21 +136,21 @@ INFO: [Synth 8-6157] synthesizing module 'status_state' [C:/Users/Stary/Document
 	Parameter HAPPY_TIMER bound to: -849967296 - type: integer 
 	Parameter HUNGER_TIMER bound to: -69967296 - type: integer 
 	Parameter BABY_TIMER bound to: 1365000000 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'change_detect' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'change_detect' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
 	Parameter WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'change_detect' (11#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
-INFO: [Synth 8-6157] synthesizing module 'change_detect__parameterized0' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'change_detect' (11#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'change_detect__parameterized0' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
 	Parameter WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'change_detect__parameterized0' (11#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
-INFO: [Synth 8-6157] synthesizing module 'health' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/health.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'change_detect__parameterized0' (11#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/edge_detect.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'health' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/health.sv:17]
 	Parameter HAPPY_FULL bound to: 4 - type: integer 
 	Parameter HUNGER_FULL bound to: 4 - type: integer 
 	Parameter FOOD bound to: 3'b001 
 	Parameter LIGHTS bound to: 3'b010 
 	Parameter PLAY bound to: 3'b011 
 	Parameter DISCIPLINE bound to: 3'b111 
-INFO: [Synth 8-6155] done synthesizing module 'health' (12#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/health.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'hygiene' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'health' (12#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/health.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'hygiene' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv:15]
 	Parameter MED_TIMER bound to: 780000000 - type: integer 
 	Parameter BATH_TIMER bound to: 1430000000 - type: integer 
 	Parameter MED_BUFFER bound to: 1300000000 - type: integer 
@@ -160,20 +160,20 @@ INFO: [Synth 8-6157] synthesizing module 'hygiene' [C:/Users/Stary/Documents/MIT
 	Parameter POOP bound to: 2 - type: integer 
 	Parameter MEDICINE bound to: 3'b100 
 	Parameter BATH bound to: 3'b101 
-INFO: [Synth 8-226] default block is never used [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'hygiene' (13#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv:15]
-INFO: [Synth 8-6155] done synthesizing module 'status_state' (14#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/status_state.sv:10]
-INFO: [Synth 8-6157] synthesizing module 'death_count_led' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/death_count_led.sv:11]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'hygiene' (13#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/hygiene.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'status_state' (14#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/status_state.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'death_count_led' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/death_count_led.sv:11]
 	Parameter MAX_COUNT bound to: 16 - type: integer 
 	Parameter PULSE_COUNT bound to: 32500000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'death_count_led' (15#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/death_count_led.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'bin_to_decimal' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/bin_to_decimal.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'bin_to_decimal' (16#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/bin_to_decimal.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'display_8hex' [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/seven_seg.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'death_count_led' (15#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/death_count_led.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_decimal' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/bin_to_decimal.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_decimal' (16#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/bin_to_decimal.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'display_8hex' [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/seven_seg.sv:10]
 	Parameter bits bound to: 13 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'display_8hex' (17#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/seven_seg.sv:10]
-INFO: [Synth 8-6155] done synthesizing module 'game_top_level' (18#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/game_top_level.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'tippity_top_level' (19#1) [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/tippity_top_level.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'display_8hex' (17#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/seven_seg.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'game_top_level' (18#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/game_top_level.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'tippity_top_level' (19#1) [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/new/tippity_top_level.sv:10]
 WARNING: [Synth 8-3331] design hygiene has unconnected port random[5]
 WARNING: [Synth 8-3331] design hygiene has unconnected port random[4]
 WARNING: [Synth 8-3331] design hygiene has unconnected port random[3]
@@ -185,7 +185,7 @@ WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[8]
 WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[7]
 WARNING: [Synth 8-3331] design game_top_level has unconnected port sw[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 893.211 ; gain = 307.953
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 894.184 ; gain = 308.793
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -198,47 +198,47 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 893.211 ; gain = 307.953
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 894.184 ; gain = 308.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 893.211 ; gain = 307.953
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 894.184 ; gain = 308.793
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 893.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 894.184 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk100mhz_to_65mhz'
-Finished Parsing XDC File [c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk100mhz_to_65mhz'
-Parsing XDC File [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]
-Finished Parsing XDC File [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tippity_top_level_propImpl.xdc].
+Parsing XDC File [c:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk100mhz_to_65mhz'
+Finished Parsing XDC File [c:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk100mhz_to_65mhz'
+Parsing XDC File [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]
+Finished Parsing XDC File [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tippity_top_level_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/tippity_top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1013.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1014.301 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1013.336 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1014.301 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1013.336 ; gain = 428.078
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1014.301 ; gain = 428.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1013.336 ; gain = 428.078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1014.301 ; gain = 428.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for clk100mhz_to_65mhz. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1013.336 ; gain = 428.078
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1014.301 ; gain = 428.910
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_buffer'
 INFO: [Synth 8-802] inferred FSM for state register 'menu_reg' in module 'icon_activity'
@@ -286,7 +286,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'menu_reg' using encoding '
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'icon_select_reg' using encoding 'sequential' in module 'icon_activity'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1013.336 ; gain = 428.078
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1014.301 ; gain = 428.910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -613,7 +613,7 @@ INFO: [Synth 8-3886] merging instance 'play_tama_time/data_reg[15]' (FD) to 'pla
 INFO: [Synth 8-3886] merging instance 'play_tama_time/data_reg[31]' (FD) to 'play_tama_time/data_reg[23]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (play_tama_time/\data_reg[23] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1013.336 ; gain = 428.078
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1014.301 ; gain = 428.910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -625,13 +625,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1013.336 ; gain = 428.078
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1014.301 ; gain = 428.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1061.992 ; gain = 476.734
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1063.125 ; gain = 477.734
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -643,7 +643,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1063.039 ; gain = 477.781
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1064.191 ; gain = 478.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -667,13 +667,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1064.836 ; gain = 479.578
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1065.008 ; gain = 479.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1064.836 ; gain = 479.578
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1065.008 ; gain = 479.617
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -692,25 +692,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1064.836 ; gain = 479.578
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1065.008 ; gain = 479.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1065.008 ; gain = 479.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1065.008 ; gain = 479.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1065.008 ; gain = 479.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -796,28 +796,28 @@ Report Instance Areas:
 |32    |  randomness           |RNG                           |    45|
 +------+-----------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1065.008 ; gain = 479.617
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:01 . Memory (MB): peak = 1064.836 ; gain = 359.453
-Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1064.836 ; gain = 479.578
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1065.008 ; gain = 359.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1065.008 ; gain = 479.617
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1076.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1077.078 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 163 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1076.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1077.078 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 102 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1076.887 ; gain = 778.324
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1076.887 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1077.078 ; gain = 778.988
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1077.078 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/tippity_top_level.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/synth_1/tippity_top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file tippity_top_level_utilization_synth.rpt -pb tippity_top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  6 16:44:21 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 10 19:56:08 2020...

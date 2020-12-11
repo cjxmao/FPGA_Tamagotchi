@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/impl_1'
+HD_PWD='C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

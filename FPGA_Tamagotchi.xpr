@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/Stary/Documents/MIT/Classes/6.111/Final_Project/FPGA_Tamagotchi/FPGA_Tamagotchi.xpr">
+<Project Version="7" Minor="44" Path="C:/GitHub/FPGA_Tamagotchi/FPGA_Tamagotchi.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4f6d1703580a4f0486dd81c7f5952279"/>
@@ -89,7 +89,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Lab04 Initial Files/debounce.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Labs/Lab_04/6111_Lab_04/6111_Lab_04.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Users/Stary/Documents/MIT/Classes/6.111/Labs/Lab_04/6111_Lab_04/6111_Lab_04.srcs/sources_1/imports/Lab04 Initial Files/debounce.sv"/>
           <Attr Name="ImportTime" Val="1601865728"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -189,7 +189,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/Final_Project/nexys4_ddr_finalproject.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../nexys4_ddr_finalproject.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Users/Stary/Documents/MIT/Classes/6.111/Final_Project/nexys4_ddr_finalproject.xdc"/>
           <Attr Name="ImportTime" Val="1605397999"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
